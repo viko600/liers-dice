@@ -143,18 +143,21 @@ class Game:
     for player_hand in self.players.values():
       all_dice_count += player_hand.get_num_of_specific_dice(self.current_bet[1])
 
+    print("===============================================")
+
     if self.current_bet[0] > all_dice_count:
       print(f"{self.current_player_pointer.capitalize()} wins!!!!")
-      print(f"There were {all_dice_count} dices in total")
+      print(f"There were {all_dice_count} dices in total\n")
       bet_loser = self.previous_player_pointer
       # the loser must become the next player
       self._switch_playrs('lose')
 
     else:
       print(f"{self.current_player_pointer.capitalize()} loses.")
-      print(f"There were {all_dice_count} dices in total")
+      print(f"There were {all_dice_count} dices in total\n")
       bet_loser = self.current_player_pointer
       
+    print("===============================================")
 
     self._lose_dice(bet_loser)
 
