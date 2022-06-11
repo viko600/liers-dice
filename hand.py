@@ -3,7 +3,7 @@ from dice import Dice
 class Hand:
   """
   Class representing each player's hand.
-  The player will lose if they are left without dices in the hand.
+  The player will lose if they are left without dice in the hand.
   """
 
   def __init__(self) -> None:
