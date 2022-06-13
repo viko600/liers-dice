@@ -8,7 +8,8 @@ class Game:
   In the class there are 2 loops, one is the main game loop, which
   goes through all players and rolls the dice in their hands,
   and the other is for the bet machine, that will go through each player
-  and will ask them if they want to raise or call the previous player a lier.
+  and will ask them if they want to raise or call the previous player a lia
+  r.
   """
   def __init__(self, num_players) -> None:
     self.round = 0
