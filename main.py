@@ -7,7 +7,7 @@ Once started, a game instance will be called and the main loop will be started
 
 if __name__ == "__main__":
 
-  print("Welcome to the lier's dice CLI")
+  print("Welcome to the liar's dice CLI")
   players = 0
   while True:
     try:
